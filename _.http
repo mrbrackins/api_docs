@@ -1,0 +1,238 @@
+### CREATE
+POST http://127.0.0.1:8000/users/create-standard
+Content-Type: application/json
+
+{
+  "name": "Tony2"
+
+}
+
+
+### READ
+GET http://127.0.0.1:8000/users/create-standard
+Content-Type: application/x-www-form-urlencoded
+
+### UPDATE
+PUT http://127.0.0.1:8000/users/create-standard/1
+Content-Type: application/x-www-form-urlencoded
+
+name=TonyUpdated
+
+### DELETE
+DELETE http://127.0.0.1:8000/users/create-standard/1
+Content-Type: application/x-www-form-urlencoded
+
+
+### CREATE - Users
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/users/create-user
+Content-Type: application/x-www-form-urlencoded
+
+name=Norman&age=40&standard=2
+
+### Read - User
+GET http://127.0.0.1:8000/users/create-user/1
+Content-Type: application/x-www-form-urlencoded
+
+### Read all - Users
+
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/users/get-users
+Content-Type: application/x-www-form-urlencoded
+
+### Update - User
+PATCH  http://127.0.0.1:8000/users/update-user/1
+Content-Type: application/x-www-form-urlencoded
+
+age=50
+
+
+### Delete - User
+Delete  http://127.0.0.1:8000/users/delete-user/1
+Content-Type: application/x-www-form-urlencoded
+
+
+### CREATE - Account
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/create-account
+Content-Type: application/x-www-form-urlencoded
+
+email=rajefearsnone@gmail.com&password=ILoveMycellf3
+
+### Read - User
+GET http://127.0.0.1:8000/accounts/create-user/1
+Content-Type: application/x-www-form-urlencoded
+
+### Read all - Users
+
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/get-accounts
+Content-Type: application/x-www-form-urlencoded
+
+### Read all accounts local
+
+GET http://127.0.0.1:8000/accounts/get-accounts
+Content-Type: application/x-www-form-urlencoded
+
+
+### Update - Account
+PATCH  https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/update-account/5
+Content-Type: application/x-www-form-urlencoded
+
+is_active=true
+
+
+### Login - Account
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/login
+Content-Type: application/json
+
+{
+  "email": "tony@mrbrackins.com",
+  "password": "P@ssword1"
+}
+
+
+
+### Logout - Account
+
+
+@token = af31a8638fc508ee380aa175d60cf27d8cb0e9c3dce595fc708b69c39772913a
+
+### POST Request
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/logout
+Content-Type: application/json
+Authorization: Token af31a8638fc508ee380aa175d60cf27d8cb0e9c3dce595fc708b69c39772913a
+
+
+### LogoutAll - Account
+
+
+@token = ae68bcb51eb72847422fc13ce09c809d7c5e1bac7ef2e1709e5ee36ebc0a05d5
+
+### POST Request
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/logout-all
+Content-Type: application/json
+Authorization: Token {{token}}
+
+
+## Affirmations
+
+### Read - Affirmations
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/affirmations
+Content-Type: application/x-www-form-urlencoded
+
+## Affirmations
+
+### CREATE
+POST http://127.0.0.1:8000/api/affirmations/
+Content-Type: application/json
+
+{
+  "name": "Tony2"
+
+}
+
+### Read - Get all affirmations
+GET http://127.0.0.1:8000/api/affirmations
+Content-Type: application/x-www-form-urlencoded
+
+### Read - Get an affirmationn
+GET http://127.0.0.1:8000/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+
+### Update - Update and affirmation
+PATCH  http://127.0.0.1:8000/api/affirmations/1/
+Content-Type: application/x-www-form-urlencoded
+
+name="hello world"
+
+### Delete - Delete an affirmationn
+DELETE  http://127.0.0.1:8000/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+
+## Affirmations
+
+### CREATE
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/
+Content-Type: application/json
+
+{
+  "name": "Tony2"
+
+}
+
+### Read - Get all affirmations
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/
+Content-Type: application/x-www-form-urlencoded
+
+### Read - Get an affirmationn
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+
+### Update - Update and affirmation
+PATCH  https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/1/
+Content-Type: application/x-www-form-urlencoded
+
+name="hello world"
+
+### Delete - Delete an affirmationn
+DELETE  https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+
+
+
+
+## Affirmations
+
+### CREATE
+POST http://127.0.0.1:8000/api/favorites/toggle-favorite/1
+Content-Type: application/json
+
+# {
+#   "name": "Tony2"
+
+# }
+
+
+### Login - Account
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/accounts/login
+Content-Type: application/json
+
+{
+  "email": "tony@mrbrackins.com",
+  "password": "P@ssword1"
+}
+
+
+# @token = af31a8638fc508ee380aa175d60cf27d8cb0e9c3dce595fc708b69c39772913a
+
+### POST Request
+POST https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/favorites/toggle-favorite/36/
+Content-Type: application/json
+Authorization: Token e35f40b9faa06dc360fdde08d000fc92fc70ee281efbd11bccf905e6b1ae59d5
+### CREATE - Account
+POST http://127.0.0.1:8000/accounts/create-account
+Content-Type: application/x-www-form-urlencoded
+
+email=tony@mrbrackins.com&password=P@ssword1
+
+
+### GET Request
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/favorites/
+Content-Type: application/json
+Authorization: Token 02de32bcf5e4ccd63bb0acd1a353164ccf6a217f9107ee41e8182b46aee9384e
+
+
+
+### Read - Get an affirmationn
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/favorites/
+Content-Type: application/x-www-form-urlencoded
+Authorization: Token 02de32bcf5e4ccd63bb0acd1a353164ccf6a217f9107ee41e8182b46aee9384e
+### Read - Get an affirmationn
+GET https://affirmationapp-f4b3b53ef5ac.herokuapp.com/api/affirmations/
+Content-Type: application/x-www-form-urlencoded
+Authorization: Token 02de32bcf5e4ccd63bb0acd1a353164ccf6a217f9107ee41e8182b46aee9384e
