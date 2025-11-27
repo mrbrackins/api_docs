@@ -1,0 +1,40 @@
+@baseUrl = affirmation-api.brackins.net
+
+### CREATE - Account
+POST {{baseUrl}}/accounts/create-account
+Content-Type: application/x-www-form-urlencoded
+
+email=rajefearsnone@gmail.com&password=ILoveMycellf3
+
+
+### Login - Account
+POST {{baseUrl}}/accounts/login
+Content-Type: application/json
+
+{
+  "email": "tony@mrbrackins.com",
+  "password": "P@ssword1"
+}
+
+
+
+### Logout - Account
+
+
+@token = af31a8638fc508ee380aa175d60cf27d8cb0e9c3dce595fc708b69c39772913a
+
+### POST Request
+POST {{baseUrl}}/accounts/logout
+Content-Type: application/json
+Authorization: Token af31a8638fc508ee380aa175d60cf27d8cb0e9c3dce595fc708b69c39772913a
+
+
+### LogoutAll - Account
+
+
+@token = ae68bcb51eb72847422fc13ce09c809d7c5e1bac7ef2e1709e5ee36ebc0a05d5
+
+### POST Request
+POST {{baseUrl}}/accounts/logout-all
+Content-Type: application/json
+Authorization: Token {{token}}
