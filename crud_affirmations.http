@@ -1,0 +1,47 @@
+## Affirmations
+@baseUrl = affirmation-api.brackins.net
+### CREATE
+POST {{baseUrl}}/api/affirmations/
+Content-Type: application/json
+
+{
+  "name": "I can do anything"
+
+}
+
+### Read - Get all affirmations
+GET {{baseUrl}}/api/affirmations
+Content-Type: application/x-www-form-urlencoded
+
+### Read - Get an affirmationn
+GET {{baseUrl}}/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+
+### Update - Update and affirmation
+PATCH  {{baseUrl}}/api/affirmations/1/
+Content-Type: application/x-www-form-urlencoded
+
+name="hello world"
+
+### Delete - Delete an affirmationn
+DELETE  {{baseUrl}}/api/affirmations/2/
+Content-Type: application/x-www-form-urlencoded
+
+
+### Favorites
+### Toggle Favorites
+POST {{baseUrl}}/api/favorites/toggle-favorite/36/
+Content-Type: application/json
+Authorization: Token e35f40b9faa06dc360fdde08d000fc92fc70ee281efbd11bccf905e6b1ae59d5
+
+
+
+### View Favorites
+GET {{baseUrl}}/api/favorites/
+Content-Type: application/json
+Authorization: Token 02de32bcf5e4ccd63bb0acd1a353164ccf6a217f9107ee41e8182b46aee9384e
+
+
+
